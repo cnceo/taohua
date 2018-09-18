@@ -1,0 +1,41 @@
+<?php
+	$sql="select c.*, u.username user, u.coin coin, b.name bankName from {$this->prename}member_cash c,{$this->prename}members u, {$this->prename}bank_list b where b.id=c.bankId and c.uid=u.uid and b.isDelete=0 and c.id={$args[0]}";
+	$cashInfo=$this->getRow($sql, $args[0]);
+?>
+<link rel="stylesheet" href="/css/layui/css/layui.css"  media="all">
+<table class="layui-table">
+  <colgroup>
+    <col width="150">
+    <col width="150">
+    <col width="200">
+    <col>
+  </colgroup>
+		<tr>
+			<td class="title">用户</td>
+			<td><?=$cashInfo['user']?></td>
+		</tr>
+		<tr>
+			<td class="title">提现金额</td>
+			<td><?=$cashInfo['amount']?>元</td>
+		</tr>
+		<tr>
+			<td class="title">提现前可用资金</td>
+			<td><?=number_format($cashInfo['coin'])?>元</td>
+		</tr>
+		<tr>
+			<td class="title">银行</td>
+			<td><?=$cashInfo['bankName']?></td>
+		</tr>
+		<tr>
+			<td class="title">账号</td>
+			<td><?=$cashInfo['account']?></td>
+		</tr>
+		<tr>
+			<td class="title">开户名</td>
+			<td><?=$cashInfo['username']?></td>
+		</tr>
+        <tr>
+			<td class="title">申请时间</td>
+			<td><?=date("Y-m-d H:i:s",$cashInfo['actionTime'])?></td>
+		</tr>
+	</table>

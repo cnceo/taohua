@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+
+.tab{width: 158%;/* padding-left:20px; *//* margin-top:20px; */}
+.tab li{float:left;border:1px solid #d9d9d9;width:25%;line-height: 35px;text-align:center;font-size: 16px;font-weight:600;color:#333;}
+.tab .newsbox{height:60px;}
+.tab .zhu_ti{background-color:white;width: 38%;height:100%;}
+.tab .word{/* font-size:20px; */line-height:30px;font-weight:200;height:100%;}
+.tab .newscontent{display:none;width: 63%;/* line-height:30px; */height: 186px;/* font-size:20px; */font-weight:100;}
+.fan_ye{ width:580px;  margin-left:auto; margin-right:auto; margin-top:600px}
+.fan_ye li{ float:left; border:1px solid #d9d9d9; width:200px; border-radius:20px; line-height:60px; text-align:center; font-size:28px; color:#333; margin-left:20px;}
+.fan_ye .yan_se{ width:100px; background-color:#e93a46; color:white;}
+
+
+.tab_bar{ 
+	position:fixed; 
+	bottom:0px; left:0px; width:100%; height:98px; border-top:1px solid #d9d9d9; 
+	background-color:white;
+}
+.shou_ye{ 
+	background:url(../img/shou_ye@2x.png) no-repeat; 
+	display:block; 
+	margin:auto;
+	width:46px; height:46px;
+}
+.shou_ye00{ 
+	background:url(../img/chong_zhi@2x.png) no-repeat; 
+	display:block; 
+	margin:auto;
+	width:46px; height:46px;
+}
+.shou_ye01{ 
+	background:url(../img/ti_xian@2x.png) no-repeat; 
+	display:block; 
+	margin:auto;
+	width:46px; height:46px;
+}
+.shou_ye02{ 
+	background:url(../img/xiao_xi_blue@2x.png) no-repeat; 
+	display:block; 
+	margin:auto;
+	width:46px; height:46px;
+}
+.tab_bar li{ 
+	width:25%; height:98px;
+	 padding-top:10px; 
+	float:left;
+}
+.tab_bar li span{ 
+	margin-top:10px; display:block;
+	text-align:center;
+}
+.tab_bar li a{ 
+	display:block; margin-left:5px; font-size:20px; color:#4d4d4d;
+	text-align:center;
+}
+
+

@@ -1,0 +1,15 @@
+*/target/
+.DS_Store
+/.settings/
+.project
+.classpath
+*/static
+.idea/
+*.iml
+*/*.iml
+*/static/
+/attachment
+/attachment/*
+/data/logs
+/data/logs/*
+/data/tpl/

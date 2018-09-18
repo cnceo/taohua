@@ -1,0 +1,457 @@
+.num-table .pp {
+
+
+            
+
+
+
+
+overflow: hidden;      background: #fff;      padding: 0.357143rem .5rem;      border-bottom: 1px solid #f3f3f3;}
+
+.num-table .pp .title {
+float:left;
+/* width: 27px; */ */;
+/* height:28px; */
+/* display: inline-block; */    
+/* min-width: 10px; */    padding: 0.25em -0.375em;        /* font-weight: bold; */    color: #FD0000;    /* line-height: 1; */    /* vertical-align: baseline; */    /* white-space: nowrap; */    /* text-align: center; */        /* border-radius: 0; */
+/* font-size: 1.4rem; */    /* background-color: #f25757; */
+/* margin-top: 7px; */
+}
+
+.num-table .pp .code {
+    /* margin-top: 4px; */*/;
+    /* color: #000; */
+    /* border-radius: 100px!important; */
+    /* height: 2em!important; */
+    /* width: 2em!important; */
+    /* padding: 0.4em 0!important; */
+    /* background-color: #fff; */
+    /* border: solid thin #A0A0A0; */
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background: url(/images/nsc_m/lott/m_yuan_1.png) no-repeat center;
+    background-size: 100%;
+    width: 2.7rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    color: #7b7b7b;
+    font-size: 1.4rem;
+    text-align: center;
+    border-style: none;
+}
+
+.num-table .pp .code:hover{
+}
+
+.num-table .pp .code.checked {
+    /* background-color: #E93A46; */
+    /* border: solid thin #e36d6d; */
+    /* color: #fff!important; */
+    background: url(/images/nsc_m/lott/m_yuan2.png) no-repeat center;
+    color: #fff;
+    border: 0px;
+    background-size: 100%;
+    width: 2.7rem;
+    height: 2.8rem;
+}
+
+@-webkit-keyframes codea {
+	0% {
+		-webkit-transform: scale(1);
+	}
+
+	25% {
+		-webkit-transform: scale(0.5);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes codea {
+	0% {
+		-moz-transform: scale(1);
+	}
+
+	25% {
+		-moz-transform: scale(0.5);
+	}
+
+	100% {
+		-moz-transform: scale(1);
+	}
+}
+
+.num-table .pp .code.reset {
+/* width:72px; */
+}
+
+.num-table .pp .code.reset:hover,.num-table .pp .code.reset.checked {
+}
+
+.num-table .pp .action {
+float:right;
+
+
+
+
+
+
+
+background: #FFFFFF;
+cursor:pointer;
+border:none medium;
+
+margin-top: 4px;
+border-radius: 5px;
+display: inline-block;      width: 1.571429rem;      height: 2.714286rem;      line-height: 2.714286rem;      color: #6f6f6f;      font-size: 1.1rem;      text-align: center;      margin-right: 1.071429rem;}
+
+.num-table .pp .action:hover,.num-table .pp .action.on {
+/* color:#fff; */
+/* border-radius: 20px; */
+/* background: #e36d6d; */
+color: #ff632c;      font-weight: bold;}
+
+.num-table .pp #textarea-code {
+
+
+
+
+                              height: 5.714286rem;      width: 100%;      font-family: 'microsoft yahei';      padding: 0.357143rem;      border: 1px solid #d8d8d8;      resize: vertical;}
+
+.num-table .pp #wei-shu {
+margin-left: 86px;
+/* margin-top: 1px; */
+}
+
+.num-table .pp #wei-shu input {
+margin-right:2px;
+}
+
+.num-table .dantuo {
+width:950px;
+margin:0 auto 10px;
+}
+
+.jiangjin {
+/* color: #555; */
+/* width:100%; */
+/* height:40px; */
+/* line-height:40px; */
+/* position:relative; */
+/* margin:0; */
+}
+
+.jiangjin .fl {
+/*float:left;
+display:inline;*/
+  /* margin-left: 10px; */
+  /* font-size: 13px; */
+}
+
+.jiangjin .fr {
+float:right;
+display:inline;
+}
+
+.jiangjin .min,.jiangjin .max {
+display:none;
+}
+
+.jiangjin strong {
+font-weight:400;
+}
+
+.jiangjin .ui-slider-handle {
+height:15px;
+width:20px;
+border:0;
+margin-top:11px;
+vertical-align:middle;
+/*background:url(/skin/images/hua.jpg) left center no-repeat;*/
+}
+
+.jiangjin .tiao {
+display:inline;
+/* background:url(/skin/images/tiao1.jpg) no-repeat center center; */
+/* border:0; */
+/* margin:0 5px; */
+/* padding:5px 94px; */
+}
+
+.jiangjin .fdmoney {
+/* color:red; */
+/* margin-left:10px; */
+/* display:inline-block; */
+/* width:100px; */
+}
+
+.jiangjin a img {
+vertical-align:middle;
+margin-top:-3px;
+}
+
+.jiangjin .mo {
+padding-left:0;
+}
+
+.jiangjin b {
+/* font-weight:400; */
+/* cursor:pointer; */
+/* background-color: #93d79b; */
+/* padding: 5px 8px 5px 8px; */
+/* border-radius: 4px; */
+font-size: 0.857143rem;      color: #737373;      display: inline-block;      width: 1.785714rem;      height: 1.785714rem;      line-height: 1.785714rem;      border-radius: 5px;      text-align: center;      background-color: #E2E1E1;      margin-right: 0.428571rem;      cursor: pointer;}
+
+.jiangjin b:hover,.jiangjin b.dwon {
+/* color:#fff; */
+/* background-color: #f07a64; */
+color: #fff;      background-color: #FF632C;}
+
+.jiangjin .bei {
+padding-left:0;
+margin-left:0;
+}
+
+.jiangjin .surbeishu,.jiangjin .addbeishu {
+cursor:pointer;
+vertical-align:middle;
+margin-top:-3px;
+}
+
+.jiangjin .jian {
+width:20px;
+height:40px;
+border:0;
+background:url(/skin/images/jian.jpg) no-repeat 0 7px;
+cursor:pointer;
+vertical-align:middle;
+}
+
+.jiangjin .bei1 {
+width:40px;
+height:22px;
+line-height:22px;
+border:0;
+text-align:center;
+color:#fff;
+background:gray;
+vertical-align:middle;
+margin:0 3px;
+}
+
+.jiangjin .jia {
+width:20px;
+height:40px;
+border:0;
+background:url(/skin/images/jia.jpg) no-repeat 0 7px;
+cursor:pointer;
+vertical-align:middle;
+}
+
+.jiangjin .ge {
+padding-left:2px;
+}
+
+.jiangjin .tian {
+display:inline-block;
+width:110px;
+height:40px;
+background:url(/skin/images/tian.png) no-repeat top center;
+cursor:pointer;
+}
+
+.jiangjin .tian:hover {
+background:url(/skin/images/tian1.png) no-repeat top center;
+}
+
+.jiangjin .qing {
+display:inline-block;
+width:110px;
+height:40px;
+background:url(/skin/images/qing.png) no-repeat top center;
+cursor:pointer;
+margin-right:10px;
+}
+
+.jiangjin .qing:hover {
+background:url(/skin/images/qing1.png) no-repeat top center;
+}
+
+.jiangjin .prompt {
+position:absolute;
+top:-20px;
+left:70px;
+font-size:13px;
+color:red;
+}
+
+.touzhu-cont {
+/* background-color:#fff; */
+/* overflow-y:auto; */
+/* line-height: 5px; */
+/* border:1px solid #c1c1c1; */
+/* height: 61px; */
+/* width: 99%; */
+/* text-align: center; */
+/* box-shadow: 1px 0 5px rgba(0,0,0,.3) inset; */
+/* margin: 0px auto; */
+/* border-radius: 13px; */ 
+/* margin-top: -60px; */   
+padding: 0.428571rem 0.357143rem;      min-height: 5.142857rem;      max-height: 13.714286rem;      overflow: auto;      background: #efefef;      border-radius: 5px;      width: 96%;      margin: 0 auto;      margin-bottom: 0.642857rem;      text-align: center;      font-size: 1.071429rem;      line-height: 5.142857rem;      color: #949494;}
+
+.touzhu-cont tr:hover {
+background-color:#dedede;
+background:#CCC;
+color:#222;
+}
+
+.touzhu-cont table {
+width:100%;
+color:#333;
+}
+
+.touzhu-cont td {cursor:default;padding:0 8px;<script type="text/javascript">  var game={   type: <?= json_encode($this->type) ?>,   played:<?= json_encode($this->played) ?>,   groupId:<?= json_encode($this->groupId) ?>;},user="<?= $this->user['username'] ?>",  aflag=<?= json_encode($this->user['admin'] == 1) ?>;  </script>;background: #efefef;height: 2.142857rem;font-size: 0.857143rem;color: #a4a4a4;/* line-height: 5; */line-height: 4.142857rem;}
+
+.touzhu-cont .del {
+background:url(/images/nsc/lottery/delete_one.png) no-repeat left top;
+width:19px;
+height:19px;
+margin-top: 9px;
+cursor:pointer;
+}
+
+.touzhu-bottom {
+width:150%;
+height:25px;
+line-height:25px;
+margin:5px 0 0;
+}
+
+.touzhu-bottom .tz-tongji {
+float:left;
+display:inline;
+margin-left:0;
+}
+
+.touzhu-bottom .tz-tongji span {
+color:red;
+font-size:14px;
+font-weight:700;
+margin:0 5px;
+}
+
+.touzhu-bottom .zhui {
+float:left;
+height:56px;
+width:130px;
+cursor:pointer;
+background:url(/skin/images/zhui.png) no-repeat bottom center;
+text-indent:-9999px;
+}
+
+.touzhu-bottom .zhui:hover {
+background:url(/skin/images/zhui1.png) no-repeat bottom center;
+}
+
+.touzhu-bottom .tou {
+float:left;
+height:56px;
+width:130px;
+cursor:pointer;
+background:url(/skin/images/tou.png) no-repeat bottom center;
+text-indent:-9999px;
+}
+
+.touzhu-bottom .tou:hover {
+background:url(/skin/images/tou1.png) no-repeat bottom center;
+}
+
+.tian_def {
+margin-right: 6px;
+padding: 3px 14px 3px 14px;
+float: right;            
+width: 30px;    
+height: 30px;    
+line-height: 30px;    
+text-align: center;    
+font-size: 13px;    
+background: #F7F7F7;                
+border-radius: 6px;
+}
+
+.tian_def:hover {
+/* background: #E2E1E1; */
+}
+
+.num-table .pp #wei-shu label,.num-table .dantuo label {
+font-size:14px;
+font-weight:700;
+margin-right:5px;
+}
+
+.touzhu-bottom .tz-buytype,.touzhu-bottom .tz-true-btn {
+float:right;
+}
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1475865226_8777902.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1475865226_8777902.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1475865226_8777902.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1475865226_8777902.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1475865226_8777902.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.wei{
+    display: inline;
+    float: left;
+    overflow: hidden;
+    padding-right: 0.5rem;
+    height: 2.857143rem;
+    line-height: 2.857143rem;
+    text-align: left;
+    color: #ff632c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0.4rem;
+}             
+.num-table .pp .code1 {
+   
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background: url(/images/nsc_m/lott/m_yuan_1.png) no-repeat center;
+    background-size: 100%;
+    width: 3.7rem;
+    height: 3.8rem;
+    line-height: 2.8rem;
+    color: #7b7b7b;
+    font-size: 1.4rem;
+    text-align: center;
+    border-style: none;
+}    
+.num-table .pp .code1.checked {
+    
+    background: url(/images/nsc_m/lott/m_yuan2.png) no-repeat center;
+    color: #fff;
+    border: 0px;
+    background-size: 100%;
+    width: 3.7rem;
+    height: 3.8rem;
+}            
+
+.is_combine {
+	display: inline;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 3px;
+    cursor: pointer;	
+} 
+.hemai {  margin: 7px 0px 0 0;float: right;display: inline;}
+.hemai .fq {color: #B5B1D7;font-size: 13px;}

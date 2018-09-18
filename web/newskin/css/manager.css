@@ -1,0 +1,2777 @@
+/* 购买页面-右边浮动彩种快捷选择 */
+.caizxz {
+	position: fixed;
+margin-top: 0px;
+width: 40px;
+height: 111px;
+background: #35aaff;
+border-radius: 6px;
+cursor: pointer;
+z-index: 40;
+color: #fff;
+margin-left: -52px;
+}
+
+.caizxz-rx {
+	margin-top: 0px;
+}
+
+.caizxz span {
+	display: block;
+	word-wrap: break-word;
+	overflow: hidden;
+	width: 20px;
+	line-height: 16px;
+	text-align: center;
+	margin: 13px 0 0 10px;
+}
+
+.caizxz span i {
+	display: block;
+	background: url(/Template/img/mian/icon.png) no-repeat;
+	width: 20px;
+	height: 20px;
+}
+
+.caizxz .move-cz {
+	display: none;
+	position: absolute;
+	width: 507px;
+	top: -97px;
+	left: 50px;
+	z-index: 30;
+}
+
+.caizxz .move-cz .jt {
+	background: url(/Template/img/mian/tkjt.png);
+	width: 22px;
+	height: 111px;
+	margin-top: 108px;
+margin-left: -21px;
+}
+
+.caizxz .czxz {
+	padding: 4px;
+	width: 447px;
+	background: #F5F5F5;
+	color: #787878;
+	-webkit-box-shadow: 0 0 10px rgba(153,153,153,.6);
+	box-shadow: 0 0 10px rgba(153,153,153,.6);
+	margin-top: -124px;
+}
+
+.caizxz .czxz dl {
+	display: block;
+	border: 1px solid #f2f2f2;
+	border-bottom: none;
+	background: #fff;
+}
+
+.caizxz .czxz dl dd {
+	overflow: hidden;
+	padding: 10px 6px 5px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.caizxz .czxz dl dd:hover {
+	background: #f9f9f9;
+}
+
+.caizxz .czxz dl h3 {
+	display: block;
+	float: left;
+	color: #b0b0b0;
+	font-weight: normal;
+	padding-left: 6px;
+}
+
+.caizxz .czxz dl dd:hover h3 {
+	color: #35aaff;
+}
+
+.caizxz .czxz dl ul {
+	display: block;
+	float: right;
+	overflow: hidden;
+	width: 322px;
+}
+
+.caizxz .czxz dl ul li {
+	display: block;
+	float: left;
+	border: 1px solid #E8E8E8;
+	line-height: 26px;
+	margin: 0 5px 5px 0;
+	font-size: 12px;
+	border-radius: 30px;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.caizxz .czxz dl ul li:hover {
+	border: 1px solid #35aaff;
+	color: #35aaff;
+	background: #fff;
+}
+
+.caizxz:hover .move-cz {
+	display: block;
+}
+.manager .page-container {
+	/* background-color: rgba(255,255,255,0.5); */
+	/* padding: 80px 20px; */
+	/* min-height: 766px; */
+}
+
+/*分页*/
+.bottompage{margin:30px 0;text-align:center; }
+.bottompage .disabled{color:#CCCCCC;}
+.bottompage a{display:inline-block; width:50px; height:22px; line-height:22px;background:none repeat scroll 0 0 #e6e6e6;boder:1px solid #D87D1B;color:#000; text-align:center;}
+.bottompage a:hover{background:none repeat scroll 0 0 #35aaff;color:#fff;}
+.bottompage a.disabled{background:none repeat scroll 0 0 #e6e6e6;color:#666;}
+.bottompage a.pagecurrent{background: none repeat scroll 0 0 #35aaff;color:#FFFFFF;}
+.bottompage span.disabled{margin-left:10px; font-size:14px; color:#666;}
+
+/*分页结束*/
+
+/* 菜单 */
+.manager .menu {
+	height: 90px;
+	padding: 20px 0 0 0;
+}
+
+.manager .menu > a {
+	height: 50px;
+	width: 200px;
+	line-height: 48px;
+	text-align: center;
+	background-color: #00a8e9;
+	color: #fff;
+	font-size: 20px;
+	display: block;
+	float: left;
+	margin-right: 1px;
+	text-decoration: none;
+}
+
+.manager .menu > a:hover {
+	background-color: #12b5ff;
+}
+
+.manager .menu > a.active {
+	color: #fff;
+	background-color: #35aaff;
+	border-color: #35aaff;
+}
+
+.manager .menu > a.active:hover {
+	background-color: #2cc6ab;
+}
+
+.manager .menu > a.hide {
+	display: none;
+}
+
+.manager .menu > a > i {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: -18px;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+}
+
+.manager .menu > a > i.funds {
+	background-position: 0 -197px;
+}
+
+.manager .menu > a > i.account {
+	background-position: -50px -197px;
+}
+
+.manager .menu > a > i.proxy {
+	background-position: -100px -197px;
+}
+
+.manager .menu > a > i.report {
+	background-position: -150px -197px;
+}
+
+.manager .menu > a > i.message {
+	background-position: -200px -197px;
+}
+
+/* 导航 */
+.manager .nav {
+	height: 36px;
+	margin: 0 -2px;
+}
+
+.manager .nav > a {
+	height: 36px;
+	width: 98px;
+	line-height: 34px;
+	text-align: center;
+	background-color: #fff;
+	color: #343434;
+	font-size: 14px;
+	display: block;
+	float: left;
+	margin: 0 2px;
+	text-decoration: none;
+	border: 1px solid #e9e9e9;
+	border-bottom: none;
+}
+
+.manager .nav > a.active {
+	color: #fff;
+	background-color: #35aaff;
+	border-color: #35aaff;
+}
+
+.manager .nav > a.hide {
+	display: none;
+}
+
+.manager .content {
+	min-height: 600px;
+	background-color: #fff;
+	border: 1px solid #e9e9e9;
+}
+
+.manager .content.hide {
+	display: none;
+}
+
+.manager .wrapper {
+	padding: 20px 30px 0 30px;
+}
+
+.manager .wrapper.hide {
+	display: none;
+}
+
+.manager .content .params {
+	padding: 5px 0;
+	margin-top: -5px;
+	color: #787876;
+}
+
+.manager .content .params > .row {
+	line-height: 32px;
+	padding: 5px 0;
+}
+
+.manager .content .params > .row select.form-control {
+	width: 96px;
+	height: 32px;
+	font-size: 12px;
+}
+
+.manager .content .params > .row input[type="text"].form-control {
+	width: 96px;
+	height: 32px;
+	font-size: 12px;
+}
+
+.manager .content .params > .row input.d-range-picker {
+	width: 166px !important;
+}
+
+.manager .content .params > .row input[type="checkbox"].form-control {
+	vertical-align: -1.5px;
+}
+
+.manager .content .params > .row input[type="button"].search {
+	height: 30px;
+	width: 72px;
+	border: none;
+	color: #fff;
+	background-color: #00a8e9;
+	transition: all 0.2s ease 0s;
+	font-size: 16px;
+	color: #FFF;
+	cursor: pointer;
+	vertical-align: -1px;
+	margin-left: 10px;
+}
+
+.manager .content .params > .row input[type="button"].search:hover {
+	background-color: #12b5ff;
+}
+
+.manager .content .params > .row .button-groups {
+	margin: 0 -5px;
+	display: inline;
+}
+
+.manager .content .params > .row .button-groups > a {
+	padding: 0 15px;
+	background-color: #F99326;
+	display: inline-block;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.manager .content .params > .row .button-groups > .button {
+	margin: 0 5px;
+}
+
+.manager .content .result {
+	padding: 5px 0;
+}
+
+.manager .content .result.hide {
+	display: none;
+}
+
+.manager .content .result table.form-control {
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: #787876;
+}
+
+.manager .content .result table.form-control > thead > tr > td {
+	border-left: 1px solid #2ec6ab;
+	border-right: 1px solid #2ec6ab;
+}
+
+.manager .content .result table.form-control > tbody > tr > td {
+	border-bottom: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+
+.manager .content .result table.form-control > thead > tr {
+	line-height: 36px;
+	background-color: #35aaff;
+	color: #fff;
+}
+
+.manager .content .result table.form-control.line-height-medium > thead > tr {
+	line-height: 45px;
+}
+
+.manager .content .result table.form-control > tbody > tr {
+	line-height: 24px;
+	background-color: #fcfcfc;
+}
+
+.manager .content .result table.form-control.line-height-medium > tbody > tr {
+	line-height: 30px;
+}
+
+.manager .content .result table.form-control > tbody > tr.nodata {
+	height: 120px;
+}
+
+.manager .content .result table.form-control > tbody > tr.nodata > td {
+	vertical-align: middle;
+}
+
+.manager .content .result table.form-control > tbody > tr > td {
+	padding: 6px 0;
+}
+
+.manager .content .result table.form-control.line-height-medium > tbody > tr > td {
+	padding: 7.5px 0;
+}
+
+.manager .content .result table.form-control > thead > tr > td > a {
+	padding: 0 2px;
+	text-decoration: underline;
+	color: #fff;
+	cursor: pointer;
+}
+
+.manager .content .result table.form-control > tbody > tr > td > a {
+	padding: 0 2px;
+	text-decoration: underline;
+	color: #35aaff;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+.manager .content .result table.form-control > thead > tr > td > a:hover {
+	color: #fff;
+}
+
+.manager .content .result table.form-control > tbody > tr > td > a:hover {
+	color: #35aaff;
+}
+
+.manager .content .result > .page-list {
+	padding-top: 10px;
+}
+
+.manager .content .result > .noresult {
+	height: 72px;
+	text-align: center;
+}
+
+.manager .content .result > .noresult > i {
+	height: 72px;
+	width: 72px;
+	background-image: url("/newskin/image/ui_icon_info.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.manager .content .result > .noresult > span {
+	font-size: 18px;
+}
+
+.manager .modal .form.hide {
+	display: none;
+}
+
+.manager .modal .avatar-list {
+	margin: 0 -5px;
+	overflow: hidden;
+}
+
+.manager .modal .avatar-list > .item {
+	float: left;
+	margin: 0 5px 10px 5px;
+	border: 2px solid #fff;
+	position: relative;
+	cursor: pointer;
+}
+
+.manager .modal .avatar-list > .item > i.checked {
+	position: absolute;
+	width: 26px;
+	height: 18px;
+	bottom: 0px;
+	right: 0px;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	background-position: -24px -130px;
+	display: none;
+}
+
+.manager .modal .avatar-list > .item.selected {
+	border: 2px solid #35aaff;
+}
+
+.manager .modal .avatar-list > .item.selected > i.checked {
+	display: block;
+}
+
+.manager .content .form table.form-control {
+	width: 100%;
+	font-size: 14px;
+	color: #787876;
+}
+
+.manager .content .form table.form-control > tbody > tr {
+	line-height: 54px;
+}
+
+.manager .content .form table.form-control > tbody > tr.hide {
+	display: none;
+}
+
+.manager .content .form table.form-control > tbody > tr.last-child {
+	border-bottom: none;
+}
+
+.manager .content .form table.form-control > tbody > tr > td {
+	padding: 0 5px;
+}
+
+.manager .content .form table.form-control > tbody > tr > td.label {
+	width: 25%;
+	text-align: right;
+	color: #333;
+}
+
+.manager .content .form table.form-control > tbody > tr > td.label-sm {
+	width: 15%;
+	text-align: right;
+}
+
+.manager .content .form table.form-control > tbody > tr > td.align-top {
+	vertical-align: top;
+}
+
+.manager .content .form table.form-control > tbody > tr > td.text {
+	width: 30%;
+}
+
+.manager .content .form table.form-control > tbody > tr > td.msg > a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.manager .content .form table.form-control > tbody > tr > td .radio-group {
+	display: inline;
+	margin-left: -5px;
+	cursor: default;
+}
+
+.manager .content .form table.form-control > tbody > tr > td .radio-group > label {
+	cursor: pointer;
+}
+
+.manager .content .form table.form-control > tbody > tr > td .radio-group > label > input {
+	cursor: pointer;
+	vertical-align: -1px;
+}
+
+.manager .content .form table.form-control > tbody > tr > td select {
+	width: 200px;
+	height: 34px;
+}
+
+.manager .content .form table.form-control > tbody > tr > td input[type="text"],
+.manager .content .form table.form-control > tbody > tr > td input[type="password"] {
+	width: 320px;
+	height: 34px;
+}
+
+.manager .content .form table.form-control > tbody > tr > td input.h-42 {
+	height: 42px;
+}
+
+.manager .content .form table.form-control > tbody > tr.textarea > td.value {
+	line-height: 0;
+}
+
+.manager .content .form table.form-control > tbody > tr > td input.message {
+	width: 490px;
+}
+
+.manager .content .form table.form-control > tbody > tr > td textarea.message {
+	width: 490px;
+	height: 240px;
+	margin: 10px 0;
+}
+
+.manager .content .form table.form-control > tbody > tr > td select.medium,
+.manager .content .form table.form-control > tbody > tr > td input.medium {
+	width: 260px;
+}
+
+.manager .content .form table.form-control > tbody > tr > td select.large,
+.manager .content .form table.form-control > tbody > tr > td input.large {
+	width: 320px;
+}
+
+.manager .content .form table.form-control > tbody > tr > td .help-inline {
+	padding: 0 5px;
+	display: inline;
+}
+
+.manager .content .form table.form-control > tbody > tr > td .help-block {
+	display: block;
+}
+
+.manager .content .form table.form-control > tbody > tr.actions > td {
+	line-height: 0;
+}
+
+.manager .content .form table.form-control > tbody > tr > td .button-groups {
+	margin: 0 -10px;
+	padding: 10px 0;
+}
+
+.manager .content .form table.form-control > tbody > tr > td .button-groups > .button {
+	margin: 0 10px;
+}
+
+.manager .content .tabs {
+	height: 46px;
+	border-bottom: 1px solid #35aaff;
+	font-size: 13px;
+}
+
+.manager .content .tabs > a {
+	height: 40px;
+	width: 140px;
+	display: block;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background-color: #35aaff;
+	border: 1px solid #35aaff;
+	border-bottom: none;
+	margin-left: 5px;
+	transition: all 0.2s ease 0s;
+	cursor: pointer;
+}
+
+.manager .content .tabs > a.active {
+	background-color: #fff;
+	border-color: #35aaff;
+	margin-top: 6px;
+	cursor: default;
+	color: #787876;
+}
+
+.manager .content .panels {
+	
+}
+
+.manager .content .panels > .section {
+	display: none;
+}
+
+.manager .content .panels > .section.active {
+	display: block;
+}
+
+.manager .content .menus {
+	height: 50px;
+	border-bottom: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+}
+
+.manager .content .menus > a {
+	height: 49px;
+	width: 140px;
+	display: block;
+	float: left;
+	line-height: 47px;
+	text-align: center;
+	color: #787876;
+	background-color: #fcfcfc;
+	border-top: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	cursor: pointer;
+}
+
+.manager .content .menus > a.active {
+	background-color: #fff;
+	cursor: default;
+	border-top: 2px solid #35aaff;
+}
+
+.manager .content .text-name {
+	font-size: 14px;
+	font-weight: bold;
+	color: #F99326;
+}
+
+.manager .content .text-money {
+	font-size: 14px;
+	font-weight: bold;
+	color: #269F8D;
+}
+
+.manager .content .text-red {
+	color: #EE4443;
+}
+
+.manager .content .text-title {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #787876;
+}
+
+.manager .content .text-title > .button-groups {
+	float: right;
+}
+
+.manager .content .tips {
+	line-height: 20px;
+	padding: 5px 0;
+}
+
+.manager .content .tips.f16 {
+	font-size: 16px;
+}
+
+.manager .content .tips > a {
+	color: #ec4646;
+}
+
+.manager .content .img-tips {
+	text-align: center;
+}
+
+.manager .content .img-tips.hide {
+	display: none;
+}
+
+.manager .notice {
+	padding: 8px 10px;
+	line-height: 24px;
+	border: 1px solid #e9e9e9;
+	color: #787876;
+}
+
+.manager .notice.warning {
+	border: 1px solid #F8E2B9;
+	background-color: #FFFDEB;
+	color: #D16C00;
+}
+
+/* 按钮样式 */
+.manager .button {
+    width: 126px;
+    height: 42px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #35aaff;
+    cursor: pointer;
+	transition: all 0.2s ease 0s;
+	font-size: 16px;
+	font-family: inherit;
+	vertical-align: middle;
+}
+
+.manager .button:hover {
+	background-color: #2cc6ab;
+}
+
+.manager .button.blue {
+	background-color: #00a8e9;
+}
+
+.manager .button.blue:hover {
+	background-color: #12b5ff;
+}
+
+.manager .button.dark-green {
+	background-color: #35aaff;
+}
+
+.manager .button.dark-green:hover {
+	background-color: #2cc6ab;
+}
+
+.manager .button.light-green {
+	background-color: #90d554;
+}
+
+.manager .button.light-green:hover {
+	background-color: #90ea39;
+}
+
+.manager .button.small {
+	width: 102px;
+	height: 34px;
+	font-size: 14px;
+	vertical-align: inherit;
+}
+
+.manager .button.w-260 {
+	width: 260px;
+}
+
+.manager .button.hide {
+	display: none;
+}
+
+.manager .button.left {
+	float: left;
+}
+
+.manager .button.right {
+	float: right;
+}
+
+/* 充值表单 */
+.manager .content .recharge-form {
+	padding: 0 10px;
+}
+
+.manager .content .recharge-form > .section {
+	display: none;
+}
+
+.manager .content .recharge-form > .section.active {
+	display: block;
+}
+
+.manager .content .recharge-form .step-panel {
+	display: none;
+}
+
+.manager .content .recharge-form .step-panel.active {
+	display: block;
+}
+
+/* 充值类型 */
+.manager .content .recharge-form .pay-type {
+	height: 50px;
+	line-height: 48px;
+}
+
+.manager .content .recharge-form .pay-type > .label {
+	font-size: 18px;
+	color: #333;
+	display: inline;
+}
+
+.manager .content .recharge-form .pay-type > label {
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.recharege-leibie {
+	margin-top: 20px;
+    font-size: 17px;
+}
+
+.tocash-leibie {
+	margin-top: 20px;
+    font-size: 17px;
+}
+.recharege-lb {
+	margin-top: 20px;
+    font-size: 17px;
+	margin-bottom:20px;
+}
+.recharge-jine {
+	margin-top: 20px;
+    font-size: 17px;
+}
+.rechareg-yzm {
+	margin-top: 20px;
+    font-size: 17px;
+}
+
+/* 充值步骤 */
+.manager .content .recharge-form .pay-step {
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+.manager .content .recharge-form .pay-step table.form-control {
+	width: 100%;
+	border-top: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	text-align: center;
+}
+
+.manager .content .recharge-form .pay-step table.form-control > tbody > tr {
+	line-height: 48px;
+}
+
+.manager .content .recharge-form .pay-step table.form-control > tbody > tr > td {
+	border-bottom: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	width: 33.3%;
+}
+
+.manager .content .recharge-form .pay-step table.form-control > tbody > tr > td.current {
+	color: #009B7D;
+	background-color: #f5f5f5;
+}
+
+.manager .content .recharge-form .help-tips {
+	height: 50px;
+	line-height: 48px;
+	color: #35aaff;
+	font-size: 13px;
+}
+
+.manager .content .recharge-form .pay-amount {
+	height: 50px;
+	line-height: 48px;
+}
+
+.manager .content .recharge-form .pay-amount > .label {
+	font-size: 18px;
+	color: #333;
+	display: inline;
+}
+
+.manager .content .recharge-form .pay-amount > input[type="text"].form-control {
+	width: 200px;
+	height: 42px;
+}
+
+.manager .content .recharge-form .button-groups {
+	padding: 20px 0;
+	margin: 0 -5px;
+}
+
+.manager .content .recharge-form .button-groups > .button {
+	width: 140px;
+	margin: 0 5px;
+}
+
+.manager .content .recharge-form .button-groups > .big {
+	width: 294px;
+}
+
+/* 转账详细 */
+.manager .content .recharge-form .transfers-details {
+	padding: 20px 120px 20px 160px;
+	border: 1px solid #e9e9e9;
+}
+
+.manager .content .recharge-form .transfers-details > .text {
+	padding: 8px 0;
+	line-height: 28px;
+	font-size: 14px;
+	color: #787876;
+}
+
+.manager .content .recharge-form .transfers-details > .text > .title {
+	color: #333;
+	font-weight: bold;
+}
+
+.manager .content .recharge-form .transfers-details > .bank-info {
+	height: 64px;
+	line-height: 62px;
+}
+
+.manager .content .recharge-form .transfers-details > .bank-info > .label {
+	font-size: 16px;
+	color: #333;
+	float: left;
+}
+
+.manager .content .recharge-form .transfers-details > .bank-info > .label > a {
+	color: #333;
+	text-decoration: none;
+}
+
+.manager .content .recharge-form .transfers-details > .bank-info > .label > a:hover {
+	color: #35aaff;
+}
+
+.manager .content .recharge-form .transfers-details > .bank-info > .bank-list {
+	float: left;
+}
+
+.manager .content .recharge-form .transfers-details > table {
+	width: 100%;
+	border-top: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	color: #787876;
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.manager .content .recharge-form .transfers-details > table > tbody > tr {
+	line-height: 40px;
+}
+
+.manager .content .recharge-form .transfers-details > table > tbody > tr > td {
+	border-bottom: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	padding: 0 10px;
+}
+
+.manager .content .recharge-form .transfers-details > table > tbody > tr > td.label {
+	width: 15%;
+	text-align: right;
+}
+
+.manager .content .recharge-form .transfers-details > table > tbody > tr > td.value {
+	width: 35%;
+}
+
+.manager .content .recharge-form .transfers-details > table > tbody > tr > td.value > a.copy {
+	float: right;
+	cursor: pointer;
+	color: #35aaff;
+}
+
+/* 在线充值详细 */
+.manager .content .recharge-form .onlinepay-details {
+	padding: 20px 120px 20px 160px;
+	border: 1px solid #e9e9e9;
+}
+
+.manager .content .recharge-form .onlinepay-details > .text {
+	padding: 8px 0;
+	line-height: 28px;
+	font-size: 14px;
+	color: #787876;
+}
+
+.manager .content .recharge-form .onlinepay-details > .text > .title {
+	color: #333;
+	font-weight: bold;
+}
+
+.manager .content .recharge-form .onlinepay-details > .bank-info {
+	height: 54px;
+	line-height: 52px;
+}
+
+.manager .content .recharge-form .onlinepay-details > .bank-info > .label {
+	font-size: 16px;
+	color: #333;
+	float: left;
+}
+
+.manager .content .recharge-form .onlinepay-details > .bank-info > .bank-list {
+	float: left;
+	padding: 0;
+}
+
+.manager .content .recharge-form .onlinepay-details > .pay-info {
+	height: 54px;
+	line-height: 52px;
+}
+
+.manager .content .recharge-form .onlinepay-details > .pay-info > .label {
+	font-size: 16px;
+	color: #333;
+	float: left;
+}
+
+.manager .content .recharge-form .onlinepay-details > .pay-info > .value {
+	float: left;
+	font-size: 16px;
+	color: #333;
+}
+
+/* 银行列表 */
+.manager .content .recharge-form .bank-list {
+	margin: 0 -5px;
+	padding: 5px 0;
+	overflow: hidden;
+}
+
+.manager .content .recharge-form .bank-list > .item {
+	position: relative;
+	width: 164px;
+	height: 44px;
+	display: block;
+	border: 1px solid #e9e9e9;
+	margin: 5px;
+	padding: 10px 0;
+	float: left;
+	cursor: pointer;
+}
+
+.manager .content .recharge-form .bank-list > .item:hover {
+	border: 1px solid #35aaff;
+}
+
+.manager .content .recharge-form .bank-list > .item.selected {
+	border: 2px solid #35aaff;
+	padding: 9px 0;
+}
+
+.manager .content .recharge-form .bank-list > .item > i.checked {
+	position: absolute;
+	width: 26px;
+	height: 18px;
+	bottom: 0px;
+	right: 0px;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	background-position: -24px -130px;
+	display: none;
+}
+
+.manager .content .recharge-form .bank-list > .item.selected > i.checked {
+	display: block;
+}
+
+.manager .content .recharge-form .bank-list > .item {
+	background-image: url("/newskin/image/banklist.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.manager .content .recharge-form .bank-list > .item.b1 {
+	background-position: 0 0;
+}
+
+.manager .content .recharge-form .bank-list > .item.b2 {
+	background-position: 0 -40px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b3 {
+	background-position: 0 -80px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b4 {
+	background-position: 0 -120px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b5 {
+	background-position: 0 -160px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b6 {
+	background-position: 0 -200px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b7 {
+	background-position: 0 -240px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b8 {
+	background-position: 0 -280px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b9 {
+	background-position: 0 -320px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b10 {
+	background-position: 0 -360px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b11 {
+	background-position: 0 -400px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b12 {
+	background-position: 0 -440px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b13 {
+	background-position: 0 -480px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b14 {
+	background-position: 0 -520px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b15 {
+	background-position: 0 -560px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b16 {
+	background-position: 0 -600px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b17 {
+	background-position: 0 -640px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b18 {
+	background-position: 0 -680px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b19 {
+	background-position: 0 -720px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b20 {
+	background-position: 0 -760px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b21 {
+	background-position: 0 -800px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b22 {
+	background-position: 0 -840px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b23 {
+	background-position: 0 -880px;
+}
+
+.manager .content .recharge-form .bank-list > .item.b24 {
+	background-position: 0 -920px;
+}
+
+/* 用户绑定银行卡列表 */
+.manager .content .bind-card-list {
+	padding: 10px 0;
+}
+
+.manager .content .bind-card-list > .item {
+	height: 66px;
+	line-height: 64px;
+	font-size: 18px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.manager .content .bind-card-list > .item > .label {
+	width: 140px;
+	height: 66px;
+	float: left;
+	text-align: right;
+}
+
+.manager .content .bind-card-list > .item > .infos {
+	width: 680px;
+	height: 66px;
+	float: left;
+	border: 1px solid #e9e9e9;
+	margin: 0 15px;
+	padding: 0 15px;
+}
+
+.manager .content .bind-card-list > .item.not-bind > .infos {
+	border: 1px dashed #e9e9e9;
+	text-align: center;
+	color: #787876;
+}
+
+.manager .content .bind-card-list > .item > .infos > div {
+	height: 66px;
+	float: left;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo {
+	width: 164px;
+	height: 44px;
+	margin: 10px 0;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo {
+	background-image: url("../img/common/banklist.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b1 {
+	background-position: 0 0;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b2 {
+	background-position: 0 -40px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b3 {
+	background-position: 0 -80px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b4 {
+	background-position: 0 -120px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b5 {
+	background-position: 0 -160px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b6 {
+	background-position: 0 -200px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b7 {
+	background-position: 0 -240px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b8 {
+	background-position: 0 -280px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b9 {
+	background-position: 0 -320px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b10 {
+	background-position: 0 -360px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b11 {
+	background-position: 0 -400px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b12 {
+	background-position: 0 -440px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b13 {
+	background-position: 0 -480px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b14 {
+	background-position: 0 -520px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b15 {
+	background-position: 0 -560px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b16 {
+	background-position: 0 -600px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b17 {
+	background-position: 0 -640px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b18 {
+	background-position: 0 -680px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b19 {
+	background-position: 0 -720px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b20 {
+	background-position: 0 -760px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b21 {
+	background-position: 0 -800px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b22 {
+	background-position: 0 -840px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b23 {
+	background-position: 0 -880px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .bank-logo.b24 {
+	background-position: 0 -920px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .card-id {
+	width: 280px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.manager .content .bind-card-list > .item > .infos > .card-name {
+	width: 90px;
+}
+
+.manager .content .bind-card-list > .item > .infos > .default {
+	width: 90px;
+}
+
+.manager .content .bind-card-list > .item > .actions {
+	float: left;
+}
+
+.manager .content .bind-card-list > .item > .actions > .btn {
+	width: 98px;
+	height: 66px;
+	font-size: 14px;
+	color: #35aaff;
+	border: 1px dashed #35aaff;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+
+.manager .content .bind-card-list > .item > .actions > .btn.active {
+	background-color: #35aaff;
+	color: #fff;
+}
+
+.manager .content .bind-card-list > .item > .actions > .btn > i {
+	width: 25px;
+	height: 25px;
+	margin: 10px auto 0 auto;
+	display: block;
+}
+
+.manager .content .bind-card-list > .item > .actions > .btn > i.set {
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	background-position: -25px -172px;
+}
+
+.manager .content .bind-card-list > .item > .actions > .btn > i.add {
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 -172px;
+}
+
+.manager .content .bind-card-list > .item > .actions > .btn > span {
+	height: 30px;
+	line-height: 28px;
+	display: block;
+}
+
+/**
+ * 用户卡片列表
+ */
+.manager .content .cardlist {
+	width: 680px;
+	padding: 10px 0;
+}
+
+.manager .content .cardlist > .card {
+	height: 60px;
+	position: relative;
+	border: 1px solid #cfcfcf;
+	vertical-align: middle;
+	padding: 6px 16px;
+	margin-bottom: 16px;
+	cursor: pointer;
+	color: #333;
+}
+
+.manager .content .cardlist > .card:last-child {
+	margin-bottom: 0;
+}
+
+.manager .content .cardlist > .card:hover {
+	border-color: #35aaff;
+}
+
+.manager .content .cardlist > .card.selected {
+	border: 2px solid #35aaff;
+	padding: 5px 15px;
+	box-shadow: 5px 5px rgba(102, 102, 102, 0.1);
+}
+
+.manager .content .cardlist > .card > .logo {
+	width: 164px;
+	height: 44px;
+	margin: 1px 0;
+	float: left;
+}
+
+.manager .content .cardlist > .card > .logo {
+	background-image: url("../img/common/banklist.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.manager .content .cardlist > .card > .logo.b1 {
+	background-position: 0 0;
+}
+
+.manager .content .cardlist > .card > .logo.b2 {
+	background-position: 0 -40px;
+}
+
+.manager .content .cardlist > .card > .logo.b3 {
+	background-position: 0 -80px;
+}
+
+.manager .content .cardlist > .card > .logo.b4 {
+	background-position: 0 -120px;
+}
+
+.manager .content .cardlist > .card > .logo.b5 {
+	background-position: 0 -160px;
+}
+
+.manager .content .cardlist > .card > .logo.b6 {
+	background-position: 0 -200px;
+}
+
+.manager .content .cardlist > .card > .logo.b7 {
+	background-position: 0 -240px;
+}
+
+.manager .content .cardlist > .card > .logo.b8 {
+	background-position: 0 -280px;
+}
+
+.manager .content .cardlist > .card > .logo.b9 {
+	background-position: 0 -320px;
+}
+
+.manager .content .cardlist > .card > .logo.b10 {
+	background-position: 0 -360px;
+}
+
+.manager .content .cardlist > .card > .logo.b11 {
+	background-position: 0 -400px;
+}
+
+.manager .content .cardlist > .card > .logo.b12 {
+	background-position: 0 -440px;
+}
+
+.manager .content .cardlist > .card > .logo.b13 {
+	background-position: 0 -480px;
+}
+
+.manager .content .cardlist > .card > .logo.b14 {
+	background-position: 0 -520px;
+}
+
+.manager .content .cardlist > .card > .logo.b15 {
+	background-position: 0 -560px;
+}
+
+.manager .content .cardlist > .card > .logo.b16 {
+	background-position: 0 -600px;
+}
+
+.manager .content .cardlist > .card > .logo.b17 {
+	background-position: 0 -640px;
+}
+
+.manager .content .cardlist > .card > .logo.b18 {
+	background-position: 0 -680px;
+}
+
+.manager .content .cardlist > .card > .logo.b19 {
+	background-position: 0 -720px;
+}
+
+.manager .content .cardlist > .card > .logo.b20 {
+	background-position: 0 -760px;
+}
+
+.manager .content .cardlist > .card > .logo.b21 {
+	background-position: 0 -800px;
+}
+
+.manager .content .cardlist > .card > .logo.b22 {
+	background-position: 0 -840px;
+}
+
+.manager .content .cardlist > .card > .logo.b23 {
+	background-position: 0 -880px;
+}
+
+.manager .content .cardlist > .card > .logo.b24 {
+	background-position: 0 -920px;
+}
+
+.manager .content .cardlist > .card > .cardno {
+	width: 280px;
+	height: 46px;
+	line-height: 44px;
+	font-size: 22px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+}
+
+.manager .content .cardlist > .card > .default,
+.manager .content .cardlist > .card > .name {
+	width: 100px;
+	height: 46px;
+	line-height: 44px;
+	text-align: center;
+	float: left;
+}
+
+.manager .content .cardlist > .card > i.checked {
+	position: absolute;
+	width: 26px;
+	height: 18px;
+	bottom: 0;
+	right: 0;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	background-position: -24px -130px;
+	display: none;
+}
+
+.manager .content .cardlist > .card.selected > i.checked {
+	display: block;
+}
+
+/**
+ * 账户安全中心
+ */ 
+.manager .content .security-point {
+	height: 140px;
+	border-bottom: 1px solid #e9e9e9;
+	margin: 0 -30px;
+	padding: 0 30px;
+}
+
+.manager .content .security-point > .point {
+	width: 120px;
+	height: 120px;
+	padding: 20px 0;
+	float: left;
+	border-radius: 50%;
+	border: 3px solid #ec4646;
+	overflow: hidden;
+}
+
+.manager .content .security-point > .point.safe {
+	border: 3px solid #35aaff;
+}
+
+.manager .content .security-point > .point > .text {
+	line-height: 32px;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+}
+
+.manager .content .security-point > .point > .value {
+	font-size: 16px;
+	color: #ec4646;
+	text-align: center;
+}
+
+.manager .content .security-point > .point.safe > .value {
+	color: #35aaff;
+}
+
+.manager .content .security-point > .point > .value > span {
+	font-size: 36px;
+}
+
+.manager .content .security-point > .infos {
+	padding: 15px 20px;
+	float: left;
+	font-size: 14px;
+	color: #787876;
+}
+
+.manager .content .security-point > .infos > .stars {
+	height: 24px;
+}
+
+.manager .content .security-point > .infos > .stars > a {
+	width: 23px;
+	height: 24px;
+	float: left;
+	margin: 0 2px;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	background-position: -23px -148px;
+}
+
+.manager .content .security-point > .infos > .stars > a.light {
+	background-position: 0 -148px;
+}
+
+.manager .content .security-point > .infos > .stars.safe > a.light {
+	background-position: -46px -148px;
+}
+
+.manager .content .security-point > .infos > .tips {
+	color: #35aaff;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.manager .content .security-point > .infos > .last-login > a {
+	color: #35aaff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.manager .content .security-list {
+	padding: 20px 0;
+}
+
+.manager .content .security-list > .item {
+	padding: 20px;
+	border: 1px solid #e9e9e9;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.manager .content .security-list > .item > .icon {
+	width: 80px;
+	height: 80px;
+	background-color: #fafafa;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.manager .content .security-list > .item.safe > .icon {
+	background-color: #35aaff;
+}
+
+.manager .content .security-list > .item.notsafe > .icon {
+	background-color: #ee4645;
+}
+
+.manager .content .security-list > .item > .icon > i {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	display: block;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+}
+
+.manager .content .security-list > .item > .icon > i.lock {
+	background-position: 0 0;
+}
+
+.manager .content .security-list > .item > .icon > i.money {
+	background-position: -50px 0;
+}
+
+.manager .content .security-list > .item > .icon > i.security {
+	background-position: -100px 0;
+}
+
+.manager .content .security-list > .item > .icon > i.card {
+	background-position: -150px 0;
+}
+
+.manager .content .security-list > .item > .icon > i.pen {
+	background-position: -200px 0;
+}
+
+.manager .content .security-list > .item > .icon > i.email {
+	background-position: -250px 0;
+}
+
+.manager .content .security-list > .item > .icon > i.user {
+	background-position: -300px 0;
+}
+
+.manager .content .security-list > .item > .icon > i.personal {
+	background-position: -350px 0;
+}
+
+.manager .content .security-list > .item > .infos {
+	width: 588px;
+	margin: 0 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.manager .content .security-list > .item > .infos > .title {
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.manager .content .security-list > .item > .infos > .help {
+	line-height: 20px;
+	color: #787876;
+	font-size: 14px;
+}
+
+.manager .content .security-list > .item > .actions {
+	width: 180px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin: -5px 0;
+}
+
+.manager .content .security-list > .item > .actions > .button {
+	height: 40px;
+	line-height: 36px;
+	display: inline-block;
+	background-color: #fafafa;
+	color: #666;
+	text-shadow: none;
+	border: 1px solid #e9e9e9;
+	margin: 5px 0;
+	vertical-align: middle;
+	border-radius: 0;
+	font-size: 16px;
+	color: #333;
+}
+
+.manager .content .security-list > .item > .actions > .button:hover {
+	background-color: #efefef;
+}
+
+.manager .content .security-list > .item.safe > .infos > .title {
+	color: #35aaff;
+}
+
+.manager .content .security-list > .item.safe:hover {
+	border: 1px solid #35aaff;
+}
+
+.manager .content .security-list > .item.notsafe > .infos > .title {
+	color: #ee4645;
+}
+
+.manager .content .security-list > .item.notsafe:hover {
+	border: 1px solid #ee4645;
+}
+
+/* 个人中心 */
+.manager .content .personal-info {
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+.manager .content .personal-info > .avatar {
+	position: relative;
+	width: 115px;
+	height: 115px;
+	float: left;
+}
+
+.manager .content .personal-info > .avatar > .img {
+	position: relative;
+	width: 115px;
+	height: 115px;
+	background-color: #00a8e9;
+	border-radius: 10%;
+	overflow: hidden;
+}
+
+.manager .content .personal-info > .avatar > .vip {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 45px;
+	height: 45px;
+	line-height: 43px;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #35aaff;
+	color: #fff;
+	z-index: 1;
+}
+
+.manager .content .personal-info > .avatar > .img > a {
+	height: 30px;
+	line-height: 24px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #fff;
+	background-color: #35aaff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.manager .content .personal-info > .avatar > .img > a:hover {
+	background-color: #2cc6ab;
+}
+
+.manager .content .personal-info > .infos {
+	width: 300px;
+	height: 115px;
+	float: left;
+	margin-left: 30px;
+}
+
+.manager .content .personal-info > .infos > .username {
+	height: 40px;
+	line-height: 38px;
+	font-size: 18px;
+}
+
+.manager .content .personal-info > .infos > .username > a {
+	font-size: 14px;
+	color: #35aaff;
+	padding: 0 5px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.manager .content .personal-info > .infos > .text {
+	height: 24px;
+	line-height: 22px;
+	font-size: 14px;
+	color: #787876;
+}
+
+.manager .content .personal-info > .actions {
+	height: 115px;
+	float: right;
+}
+
+.manager .content .personal-info > .actions > .item {
+	width: 160px;
+	height: 115px;
+	float: left;
+	background-color: #00a8e9;
+	margin-right: 1px;
+	cursor: pointer;
+}
+
+.manager .content .personal-info > .actions > .item.blue {
+	background-color: #00a8e9;
+}
+
+.manager .content .personal-info > .actions > .item.blue:hover {
+	background-color: #12b5ff;
+}
+
+.manager .content .personal-info > .actions > .item.dark-green {
+	background-color: #00a8e9;
+}
+
+.manager .content .personal-info > .actions > .item.dark-green:hover {
+	background-color: #12b5ff;
+}
+
+.manager .content .personal-info > .actions > .item > i {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 16px auto 0 auto;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+}
+
+.manager .content .personal-info > .actions > .item > i.login {
+	background-position: 0 0;
+}
+
+.manager .content .personal-info > .actions > .item > i.withdraw {
+	background-position: -50px 0;
+}
+
+.manager .content .personal-info > .actions > .item > i.security {
+	background-position: -100px 0;
+}
+
+.manager .content .personal-info > .actions > .item > a {
+	height: 42px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	display: block;
+}
+
+/* VIP优惠信息 */
+.manager .content .vip-coupon-list {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.manager .content .title1-1 {
+	height: 50px;
+	line-height: 48px;
+	font-size: 16px;
+	color: #333;
+	background-color: #e4f7ff;
+	padding: 0 16px;
+}
+
+.manager .content .vip-coupon-list > .list {
+	height: 120px;
+	margin: 20px 0;
+	padding: 0 18px;
+}
+
+.manager .content .vip-coupon-list > .list > .item {
+	width: 100px;
+	height: 120px;
+	float: left;
+	margin: 0 15px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+.manager .content .vip-coupon-list > .list > .item > .text {
+	height: 40px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #333;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	display: block;
+	background-color: #12b5ff;
+	border-radius: 50%;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.manager .content .vip-coupon-list > .list > .item:hover > i {
+	background-color: #009ee6;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i.vip1-1 {
+	background-position: 0 -50px;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i.vip1-2 {
+	background-position: -80px -50px;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i.vip1-3 {
+	background-position: -160px -50px;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i.vip1-4 {
+	background-position: -240px -50px;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i.vip1-5 {
+	background-position: -320px -50px;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i.vip1-6 {
+	background-position: -400px -50px;
+}
+
+.manager .content .vip-coupon-list > .list > .item > i.vip1-7 {
+	background-position: -480px -50px;
+}
+
+/* 账户资金列表 */
+.manager .content .money-account-list {
+	margin: -20px -30px 10px -30px;
+	color: #787876;
+}
+
+.manager .content .money-account-list > .master-account {
+	overflow: hidden;
+}
+
+.manager .content .money-account-list > .master-account > .item {
+	width: 336px;
+	height: 80px;
+	line-height: 78px;
+	text-indent: 28px;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+	font-size: 14px;
+}
+
+.manager .content .money-account-list > .master-account > .item > .amount {
+	font-size: 24px;
+	color: #00a8e9;
+}
+
+.manager .content .money-account-list > .master-account > .item.first {
+	border-left: none;
+}
+
+.manager .content .money-account-list > .master-account > .item.last {
+	border-right: none;
+}
+
+.manager .content .money-account-list > .deputy-account {
+	overflow: hidden;
+}
+
+.manager .content .money-account-list > .deputy-account > .item {
+	width: 252px;
+	height: 50px;
+	line-height: 48px;
+	text-indent: 16px;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+	font-size: 14px;
+	margin-top: -1px;
+}
+
+.manager .content .money-account-list > .deputy-account > .item.first {
+	border-left: none;
+
+}
+
+.manager .content .money-account-list > .deputy-account > .item.last {
+	border-right: none;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo {
+	height: 38px;
+	display: inline-block;
+
+	background-repeat: no-repeat;
+	vertical-align: -14px;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.ag {
+	width: 40px;
+	background-position: -10px 0;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.bbin {
+	width: 38px;
+	background-position: -56px 0;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.ea {
+	width: 40px;
+	background-position: -94px 0;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.hg {
+	width: 62px;
+	background-position: -136px 0;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.og {
+	width: 40px;
+	background-position: -200px 0;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.bet188 {
+	width: 46px;
+	background-position: -240px 0px;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.mg {
+	width: 40px;
+	background-position: -288px 0;
+}
+
+.manager .content .money-account-list > .deputy-account > .item > i.logo.pt {
+	width: 62px;
+	background-position: -330px 0;
+}
+
+/* 转出账户样式 */
+.manager .content .transfers-form > .trans-out-list {
+	position: relative;
+	color: #333;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.manager .content .transfers-form > .trans-out-list > .label {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	line-height: 38px;
+	font-size: 16px;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list {
+	margin: 0 -10px 0 80px;
+	overflow: hidden;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item {
+	position: relative;
+	width: 272px;
+	height: 112px;
+	float: left;
+	border: 1px solid #e9e9e9;
+	padding: 20px;
+	cursor: pointer;
+	margin: 0 10px 20px 10px;
+	font-size: 14px;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item:hover {
+	border: 1px solid #00a8e9;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item > .label {
+	height: 40px;
+	line-height: 24px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item > .value > input {
+	width: 188px;
+	height: 30px;
+	font-size: 13px;
+	border: 1px solid #beced8;
+	border-right: none;
+	background-color: #f5fdff;
+	float: left;
+	color: #333;
+	text-indent: 6px;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item > .value > a {
+	width: 42px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	background-color: #00a8e9;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item > .value > a:hover {
+	background-color: #12b5ff;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item > i.checked {
+	position: absolute;
+	width: 26px;
+	height: 18px;
+	bottom: 0;
+	right: 0;
+	background-image: url("/newskin/image/manager_icon.png");
+	background-repeat: no-repeat;
+	background-position: -24px -130px;
+	display: none;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item.selected {
+	border: 3px solid #35aaff;
+	background-color: #f7fffe;
+	padding: 18px;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item.selected > .value > a {
+	background-color: #35aaff;
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item.selected > .value > a:hover {
+	background-color: #2cc6ab; 
+}
+
+.manager .content .transfers-form > .trans-out-list > .list > .item.selected > i.checked {
+	display: block;
+}
+
+.manager .content .transfers-form > .trans-out-list > .total-money {
+	margin-left: 90px;
+	height: 60px;
+	font-size: 24px;
+	background-color: #f9f9f9;
+	line-height: 58px;
+	text-indent: 1em;
+}
+
+/* 转入账户样式 */
+.manager .content .transfers-form > .trans-in-list {
+	position: relative;
+	color: #333;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.manager .content .transfers-form > .trans-in-list > .label {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	line-height: 38px;
+	font-size: 16px;
+}
+
+.manager .content .transfers-form > .trans-in-list > .list {
+	margin: 0 -5px 0 85px;
+	overflow: hidden;
+}
+
+.manager .content .transfers-form > .trans-in-list > .list > .item {
+	height: 40px;
+	line-height: 38px;
+	float: left;
+	border: 1px solid #e9e9e9;
+	padding: 20px;
+	cursor: pointer;
+	margin: 0 5px;
+	padding: 0 20px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.manager .content .transfers-form > .trans-in-list > .list > .item.selected {
+	color: #fff;
+	background-color: #35aaff;
+	border-color: #35aaff;
+}
+
+.manager .content .transfers-form > .button-groups {
+	margin-left: 90px;
+	padding: 30px 0;
+}
+
+/* 弹出框内容样式 */
+.manager .modal .params {
+	padding: 5px 0;
+	margin-top: -5px;
+	color: #787876;
+}
+
+.manager .modal .params > .row {
+	line-height: 32px;
+	padding: 5px 0;
+}
+
+.manager .modal .params > .row select {
+	width: 96px;
+	height: 32px;
+	font-size: 12px;
+}
+
+.manager .modal .params > .row input[type="text"] {
+	width: 96px;
+	height: 32px;
+	font-size: 12px;
+}
+
+.manager .modal .params > .row input.search {
+	width: 420px;
+}
+
+.manager .modal .params > .row input.d-range-picker {
+	width: 166px;
+}
+
+.manager .modal .params > .row input[type="checkbox"] {
+	vertical-align: -1.5px;
+}
+
+.manager .modal .params > .row input[type="button"].search {
+	height: 30px;
+	width: 72px;
+	border: none;
+	color: #fff;
+	background-color: #00a8e9;
+	transition: all 0.2s ease 0s;
+	font-size: 16px;
+	color: #FFF;
+	cursor: pointer;
+	vertical-align: -1px;
+	margin-left: 10px;
+}
+
+.manager .modal .params > .row input[type="button"].search:hover {
+	background-color: #12b5ff;
+}
+
+.manager .modal .params > .row.f13 {
+	font-size: 13px;
+}
+
+.manager .modal .params > .row.f14 {
+	font-size: 14px;
+}
+
+.manager .modal .params > .row.quota > .value {
+	width: 130px;
+	display: inline-block;
+}
+
+.manager .modal .form {
+	font-size: 14px;
+	color: #787876;
+}
+
+.manager .modal .form table.form-control {
+	width: 100%;
+}
+
+.manager .modal .form table.form-control > tbody > tr {
+	line-height: 50px;
+}
+
+.manager .modal .form table.form-control > tbody > tr.last-child {
+	border-bottom: none;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td {
+	padding: 0 5px;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td.label {
+	width: 25%;
+	text-align: right;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td.label-sm {
+	width: 15%;
+	text-align: right;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td.align-top {
+	vertical-align: top;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td.text {
+	width: 30%;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td.msg > a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td .radio-group {
+	display: inline;
+	margin-left: -5px;
+	cursor: default;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td .radio-group > input {
+	cursor: pointer;
+	vertical-align: -1px;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td .radio-group > label {
+	cursor: pointer;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td select {
+	width: 200px;
+	height: 34px;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td input[type="text"],
+.manager .modal .form table.form-control > tbody > tr > td input[type="password"] {
+	width: 200px;
+	height: 34px;
+}
+
+.manager .modal .form table.form-control > tbody > tr.textarea > td.value {
+	line-height: 0;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td textarea.message {
+	width: 490px;
+	height: 240px;
+	margin: 8px 0;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td select.medium,
+.manager .modal .form table.form-control > tbody > tr > td input.medium {
+	width: 260px;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td select.large,
+.manager .modal .form table.form-control > tbody > tr > td input.large {
+	width: 320px;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td .help-inline {
+	padding: 0 5px;
+}
+
+.manager .modal .form table.form-control > tbody > tr.actions > td {
+	line-height: 0;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td .button-groups {
+	margin: 0 -10px;
+	padding: 8px 0;
+}
+
+.manager .modal .form table.form-control > tbody > tr > td .button-groups > .button {
+	width: 150px;
+	height: 44px;
+	margin: 0 10px;
+}
+
+.manager .modal > .button-groups {
+	padding: 8px 0;
+	text-align: center;
+}
+
+.manager .modal > .button-groups > .button {
+	width: 150px;
+	height: 44px;
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.manager .modal .notice {
+	border: none;
+}
+
+.manager .modal .list-user {
+	height: 240px;
+	padding: 0 3px;
+	border: 1px solid #e9e9e9;
+	overflow-y: scroll;
+}
+
+.manager .modal .list-user > .item {
+	width: 120px;
+	height: 30px;
+	line-height: 28px;
+	float: left;
+	cursor: pointer;
+	color: #787876;
+	font-size: 13px;
+}
+
+.manager .modal .list-user > .item > input[type="checkbox"] {
+	vertical-align: -2px;
+}
+
+.manager .modal .radio-group {
+	display: inline;
+	margin-left: -5px;
+	cursor: default;
+}
+
+.manager .modal .radio-group > label {
+	cursor: pointer;
+	height: 30px;
+	line-height: 28px;
+	color: #787876;
+}
+
+.manager .modal .radio-group > label > input {
+	cursor: pointer;
+	vertical-align: -1px;
+}
+
+.manager .modal .action-groups {
+	padding: 10px 0;
+}
+
+.manager .modal .result {
+	padding: 5px 0;
+}
+
+.manager .modal .result.hide {
+	display: none;
+}
+
+.manager .modal .result table.form-control {
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: #787876;
+}
+
+.manager .modal .result table.form-control > thead > tr > td {
+	border-left: 1px solid #2ec6ab;
+	border-right: 1px solid #2ec6ab;
+}
+
+.manager .modal .result table.form-control > tbody > tr > td {
+	border-bottom: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+
+.manager .modal .result table.form-control > thead > tr {
+	line-height: 36px;
+	background-color: #35aaff;
+	color: #fff;
+}
+
+.manager .modal .result table.form-control > tbody > tr {
+	line-height: 24px;
+	background-color: #fcfcfc;
+}
+
+.manager .modal .result table.form-control > tbody > tr.nodata {
+	height: 110px;
+}
+
+.manager .modal .result table.form-control > tbody > tr.nodata > td {
+	vertical-align: middle;
+}
+
+.manager .modal .result table.form-control > tbody > tr > td {
+	padding: 6px 0;
+}
+
+.manager .modal .result table.form-control > thead > tr > td > a {
+	padding: 0 2px;
+	text-decoration: underline;
+	color: #fff;
+	cursor: pointer;
+}
+
+.manager .modal .result table.form-control > tbody > tr > td > a {
+	padding: 0 2px;
+	text-decoration: underline;
+	color: #35aaff;
+	cursor: pointer;
+}
+
+.manager .modal .result table.form-control > thead > tr > td > a:hover {
+	color: #fff;
+}
+
+.manager .modal .result table.form-control > tbody > tr > td > a:hover {
+	color: #35aaff;
+}
+
+.manager .modal .result table.form-control > tbody > tr > td > input[type="text"] {
+	width: 100px;
+	height: 24px;
+	font-size: 13px;
+	text-align: center;
+}
+
+.manager .content .prize-list {
+	padding-bottom: 20px;
+}
+
+.manager .content .prize-list .button-list {
+	height: 40px;
+}
+
+.manager .content .prize-list .button-list > a {
+	height: 36px;
+	width: 144px;
+	line-height: 34px;
+	text-align: center;
+	background-color: #fff;
+	color: #343434;
+	font-size: 14px;
+	display: block;
+	float: left;
+	margin: 0 2px;
+	text-decoration: none;
+	border: 1px solid #e9e9e9;
+	cursor: pointer;
+}
+
+.manager .content .prize-list .button-list > a.active {
+	color: #fff;
+	background-color: #35aaff;
+	border-color: #35aaff;
+}
+
+.manager .content .prize-list table.prize {
+	width: 100%;
+	border-top: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	color: #787876;
+	text-align: center;
+}
+
+.manager .content .prize-list table.prize > thead > tr {
+	line-height: 36px;
+	background-color: #fbfbfb;
+}
+
+.manager .content .prize-list table.prize > tbody > tr {
+	line-height: 36px;
+}
+
+.manager .content .prize-list table.prize > thead > tr > td,
+.manager .content .prize-list table.prize > tbody > tr > td {
+	border-bottom: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	vertical-align: middle;
+}
+
+/* 代理首页 */
+.manager .content .proxy-index {
+	font-size: 16px;
+}
+
+.manager .content .proxy-index > .team-info {
+	background-color: #d4f0eb;
+	padding: 8px 0;
+}
+
+.manager .content .proxy-index > .team-info > table {
+	color: #333;
+	width: 100%;
+}
+
+.manager .content .proxy-index > .team-info > table > tbody > tr {
+	line-height: 36px;
+}
+
+.manager .content .proxy-index > .team-info > table > tbody > tr > td {
+	padding: 0 16px;
+}
+
+.manager .content .proxy-index > .team-info > table > tbody > tr > td span {
+	color: #35aaff;
+}
+
+.manager .content .proxy-index .params > .row .x-radio {
+	float: left;
+	margin: 0 -6px;
+}
+
+.manager .content .proxy-index .params > .row .x-radio > a {
+	height: 36px;
+	line-height: 34px;
+	padding: 0 18px;
+	display: block;
+	background-color: #f6f6f6;
+	float: left;
+	margin: 0 6px;
+	cursor: pointer;
+}
+
+.manager .content .proxy-index .params > .row .x-radio > a.checked {
+	color: #fff;
+	background-color: #35aaff;
+	cursor: default;
+}
+
+.manager .content .proxy-index .params > .row .x-date-range {
+	height: 36px;
+	line-height: 34px;
+	float: left;
+	padding: 0 6px;
+}
+
+.manager .content .proxy-index .params > .row .x-date-range > input {
+	width: 132px;;
+	height: 36px;
+	border: none;
+	background-color: #f6f6f6;
+	margin: 0 6px;
+	padding: 0 18px;
+	color: #787876;
+	font-size: 16px !important;
+}
+
+.manager .content .proxy-index .params > .row > .search {
+	height: 36px !important;
+}
+
+.manager .content .proxy-index .result {
+	
+}
+
+.manager .content .proxy-index .total {
+	height: 80px;
+	padding-left: 80px;
+}
+
+.manager .content .proxy-index .total > .item {
+	width: 158px;
+	float: left;
+	border-right: 1px solid #787876;
+	text-align: center;
+}
+
+.manager .content .proxy-index .total > .item:last-child {
+	border-right: none;
+}
+
+.manager .content .proxy-index .total > .item > .label {
+	height: 30px;
+	line-height: 28px;
+	color: #787876;
+}
+
+.manager .content .proxy-index .total > .item > .value {
+	height: 50px;
+	line-height: 48px;
+	font-size: 32px;
+	color: #333;
+}
+
+.manager .content .proxy-index .radio-group {
+	padding-left: 80px;
+	padding-top: 20px;
+	color: #787876;
+}
+
+.manager .content .proxy-index .chart {
+	height: 360px;
+	clear: both;
+}
+
+.manager .content .proxy-index .chart > .instance {
+	height: 100%;
+}
+.to-cash-mian {
+}
+.to-cash-zj {
+	margin-left: 100px;
+	font-size: 16px;
+	margin-bottom:55px;
+	margin-top: 40px;
+}
+.to-cash-bank {
+	background: #f6f6f6;
+width: 615px;
+height: 70px;
+margin-top: -40px;
+margin-left: 80px;
+border:2px solid #35aaff;
+border-radius:5px 5px 5px 5px;
+}
+.to-cash-text {
+margin-top: -50px;
+margin-left: 270px;
+font-size: 23px;
+}
+.to-cash-name {
+margin-top: -32px;
+margin-left: 556px;
+font-size: 23px;
+}
